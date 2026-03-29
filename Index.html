@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen & Sushma Wedding Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --maroon: #800000;
+            --yellow-bold: #ffd600; /* Bold, vibrant yellow like the reference */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            background-color: #0b1021; 
+            overflow-x: hidden; 
+            font-family: 'Poppins', sans-serif; 
+        }
+
+        /* Fixed Srirangam Gopuram Background - CORRECTED URL */
+        .parallax-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Your provided Gopuram Image URL */
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                              url('https://media.istockphoto.com/id/450813423/photo/sri-ranganathaswamy-temple-india.jpg?s=612x612&w=0&k=20&c=WOuSmsZ-cIg8r_H9qHmMNvfkCf2R8HQgyyoE8WeNYHQ=');
+            background-position: center bottom; /* Position adjusted for clarity */
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        /* Scrollable Container */
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Content Card Style */
+        .card {
+            width: 90%;
+            max-width: 450px;
+            background: rgba(255, 255, 255, 0.94);
+            padding: 40px 25px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid var(--gold);
+            box-shadow: 0 15px 45px rgba(0,0,0,0.6);
+            backdrop-filter: blur(5px);
+        }
+
+        /* Ganesha Icon placeholder */
+        .ganesha {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* STYLES UPDATED TO MATCH YOUR REFERENCE SCREENSHOT */
+        h1 { font-family: 'Great Vibes', cursive; color: var(--yellow-bold); font-size: 4.8rem; text-shadow: 3px 3px 12px rgba(0,0,0,1); line-height: 1.1; font-weight: 700; margin: 15px 0;}
+        h2 { font-family: 'Playfair Display', serif; color: var(--maroon); font-size: 1.8rem; margin-bottom: 10px; }
+        h3 { font-size: 1.1rem; color: #b71c1c; margin-top: 20px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; }
+        
+        p { font-size: 0.95rem; line-height: 1.6; color: #333; margin: 5px 0; }
+        .names-main { font-size: 1.3rem; color: var(--maroon); font-weight: 600; margin: 10px 0; }
+        .divider { height: 1.5px; background: var(--gold); width: 50%; margin: 20px auto; }
+
+        /* Floating Lantern Animation for the Intro only */
+        .lantern {
+            position: fixed;
+            font-size: 2rem;
+            animation: float 6s infinite ease-in-out;
+            opacity: 0.7;
+            z-index: 2;
+            pointer-events: none;
+        }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-25px); } }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 3.8rem; }
+            .card { padding: 30px 15px; }
+            .parallax-bg { background-position: center bottom; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parallax-bg"></div>
+
+    <div class="lantern" style="top: 15%; left: 8%;">🏮</div>
+    <div class="lantern" style="top: 40%; right: 10%; animation-delay: 2s;">🏮</div>
+    <div class="lantern" style="top: 60%; left: 15%; animation-delay: 4s;">🏮</div>
+
+    <div class="content-wrapper">
+        
+        <section id="home">
+            <div style="text-align: center;">
+                <p style="color: white; letter-spacing: 6px; font-weight: 300; margin-bottom: 15px;">WEDDING INVITATION</p>
+                <h1>Naveen <br>&<br> Sushma</h1>
+                <p style="color: #ffeb3b; font-size: 1.1rem; margin-top: 20px;">28.04.2026 — 03.05.2026</p>
+                <p style="color: white; opacity: 0.7; margin-top: 80px; font-size: 0.8rem;">Scroll Down to Open Invitation ↓</p>
+            </div>
+        </section>
+
+        <section id="wedding">
+            <div class="card">
+                <span class="ganesha">🕉️</span>
+                <h2>Wedding Invitation</h2>
+                <p><strong>Smt. Shantha. M & Sri Chandra. M</strong><br>Invite you to the wedding of their son</p>
+                <div class="names-main">Chi. Ry. Naveen Chandra</div>
+                <p>With</p>
+                <div class="names-main">Chi. Sou. Sushma. V (Parvathi)</div>
+                <p>D/o Smt. Late Annapoorna & Sri Vishwaradhya</p>
+                
+                <div class="divider"></div>
+                
+                <h3>Arshina (Haldi)</h3>
+                <p>Tuesday, 28th April 2026 | 7:00 PM onwards</p>
+                
+                <h3>Muhurtham</h3>
+                <p>Wednesday, 29th April 2026<br>9:15 AM to 10:15 AM (Lagnam: Mithuna)</p>
+                
+                <div class="divider"></div>
+                <p><strong>Venue:</strong> Sowdhamini Kalyana Mantapa<br>New Bank Colony, Konanakunte, Bengaluru</p>
+            </div>
+        </section>
+
+        <section id="reception">
+            <div class="card">
+                <h2>Grand Reception</h2>
+                <p>Please celebrate our union at an evening of joy</p>
+                
+                <div class="divider"></div>
+                
+                <h3>Sunday, May 3rd, 2026</h3>
+                <p>From 12:00 PM Onwards</p>
+                
+                <div class="divider"></div>
+                
+                <p><strong>Venue:</strong> Renuka Bhavana</p>
+                <p>Ujjini Road, Kotturu - 583134</p>
+                
+                <p style="margin-top: 25px; font-style: italic; color: var(--maroon);">"Awaiting your presence & blessings"</p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
